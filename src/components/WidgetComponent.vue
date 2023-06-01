@@ -16,6 +16,7 @@ export default {
     },
     mounted() {
         let q = this.$route.query
+        console.log(this.$route);
         this.name = q.coin
     },
 }

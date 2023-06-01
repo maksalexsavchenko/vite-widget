@@ -6,7 +6,7 @@ import {createRouter, createWebHistory} from "vue-router";
 const routes = [
     {
         name: 'Home',
-        path: '/',
+        path: '/vite-widget',
         component: WidgetComponent
     }
 ]
