@@ -1,13 +1,14 @@
 <template>
-    <div>
-        <h1>Hello, world!</h1>
-    </div>
+    <widget-component/>
 </template>
 
 <script>
 
+import WidgetComponent from "./components/WidgetComponent.vue";
+
 export default {
-    name: 'App'
+    name: 'App',
+    components: {WidgetComponent}
 }
 </script>
 
