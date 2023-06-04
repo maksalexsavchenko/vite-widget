@@ -1,24 +1,11 @@
-import { createApp } from 'vue';
+import {createApp} from 'vue';
 import App from './App.vue';
-import WidgetComponent from "./components/WidgetComponent.vue";
-import {createRouter, createWebHistory} from "vue-router";
+import {createPinia} from "pinia";
 
-const routes = [
-    {
-        name: 'Home',
-        path: '/vite-widget',
-        component: WidgetComponent
-    }
-]
-
-const router = createRouter({
-    history: createWebHistory(),
-    routes,
-});
-
+const pinia = createPinia()
 
 const app = createApp(App);
 
-app.use(router)
+app.use(pinia)
 
 app.mount('#root');
